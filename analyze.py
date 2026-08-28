@@ -21,4 +21,4 @@ import pandas as pd
 df = pd.read_csv("fleet_history.csv")
 print(df.head())
 
-# your analysis here
+# rank the cars according to their condition. the car with best condition got highest point and hence will get more points
