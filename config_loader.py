@@ -29,7 +29,7 @@ def load_settings(path=None):
             continue                    # kaputte Zeile? Einfach weiter. (Broken line? Just carry on.)
         parts = line.split("=")
         key = parts[0].strip()
-        value = parts[1].strip()
+        value = parts[1].strip().strip('"').strip("'")
         # Unbekannte Schluessel werden stillschweigend ignoriert. Ein Tippfehler im cfg
         # faellt also NIE auf. (Unknown keys are silently dropped, so a typo never surfaces.)
         if key in KNOWN_KEYS:
