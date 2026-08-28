@@ -1,4 +1,4 @@
-# What I checked, and what the agent got wrong
+#  I checked the Settingd.cfg,  and  the agent wrote a string as a sum of two integer variables which is wrong. it should be written in commas as a string
 
 ## What the agent got wrong
 
